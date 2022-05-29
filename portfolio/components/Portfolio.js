@@ -6,6 +6,9 @@ const Portfolio = ({ portfolios: PORTFOLIOS }) => {
     const [portfolios, setPortfolios] = React.useState([])
 
     React.useEffect(() => {
+        
+        portfolios.sort((a, b) => (Number(a.priority) > Number(b.priority)) ? 1 : -1)
+
         Array.isArray(PORTFOLIOS) && PORTFOLIOS.length > 0 && setPortfolios(PORTFOLIOS)
     }, [portfolios])
 

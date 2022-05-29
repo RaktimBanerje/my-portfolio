@@ -5,7 +5,7 @@ import React from 'react'
 const Service = () => {
     return (
         <div className="dizme_tm_section" id="service">
-            <div className="dizme_tm_services">
+            <div className="dizme_tm_services" style={{paddingTop: 0}}>
                 <div className="container">
                     <div className="dizme_tm_main_title" data-align="center">
                         <span>Services</span>

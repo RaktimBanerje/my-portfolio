@@ -85,13 +85,6 @@ export async function getStaticProps() {
     const articleResponse = await fetch("https://bluekeyboardsoftware.com/raktim/api/blog")
     const articles = await articleResponse.json()
 
-    console.log({
-        categories,
-        skills,
-        portfolios,
-        articles
-    })
-
     return {
         props: {
             categories,

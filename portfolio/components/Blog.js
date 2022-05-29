@@ -1,12 +1,13 @@
 import React from 'react'
 import BlogItem from './BlogItem'
 
-
-
 const Blog = ({ articles }) => {
+
+    articles.sort((a, b) => (Number(a.priority) > Number(b.priority)) ? 1 : -1)
+
     return (
         <div className="dizme_tm_section" id="blog" style={{paddingTop: 0}}>
-            <div className="dizme_tm_news">
+            <div className="dizme_tm_news" style={{paddingTop: 0}}>
                 <div className="container">
                     <div className="dizme_tm_main_title" data-align="center">
                         <span>From My Blog</span>

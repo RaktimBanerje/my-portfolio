@@ -10,7 +10,7 @@ const MenuItem = () => {
             <li><a href="#service">Service</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li className="download_cv"><a href="/img/cv/1.jpg" download><span>Download CV</span></a></li>
+            <li className="download_cv"><a href="https://bluekeyboardsoftware.com/raktim/assets/cv.pdf" target="_blank" download="Raktim_CV.pdf"><span>Download CV</span></a></li>
         </ul>
     )
 }

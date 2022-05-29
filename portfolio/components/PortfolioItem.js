@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 const PortfolioItem = ({ title, description, image, category, link }) => {
   return (
     <div className="inner">
@@ -11,10 +9,11 @@ const PortfolioItem = ({ title, description, image, category, link }) => {
             <div className="main" data-img-url={image}></div>
           </a>
         </div>
-        <div className="mobile_title">
-            <h3>{title}</h3>
-            <span>{description}</span>
+        <div style={{marginTop: "10px"}}>
+            <h4 style={{textAlign: "center"}}>{title}</h4>
+            <p style={{textAlign: "center"}}>{description}</p>
         </div>
+        <hr />
     </div>
   )
 }

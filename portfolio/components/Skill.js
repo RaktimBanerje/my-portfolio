@@ -343,7 +343,7 @@ const Skill = ({ categories: myCategories, skills: mySkills }) => {
 
     return (
         <div className="dizme_tm_section" id="skill">
-            <div className="dizme_tm_portfolio">
+            <div className="dizme_tm_portfolio" style={{paddingTop: 0}}>
                 <div className="container">
                     <div className="dizme_tm_main_title" data-align="center">
                         <span>Skill</span>

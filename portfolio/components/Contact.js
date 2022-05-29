@@ -46,7 +46,7 @@ const Contact = ({ toastId }) => {
 
     return (
         <div className="dizme_tm_section" id="contact">
-            <div className="dizme_tm_contact">
+            <div className="dizme_tm_contact" style={{paddingTop: 0}}>
                 <div className="container">
                     <div className="dizme_tm_main_title" data-align="center">
                         <span>Contact Me</span>
@@ -62,7 +62,9 @@ const Contact = ({ toastId }) => {
                                         </div>
                                         <div className="short">
                                             <h3>Address</h3>
-                                            <span>29E/1, Rammohan Mukherjee Lane, Howrah, Kolkata 711102</span>
+                                            <span>29E/1, </span> <br />
+                                            <span>Rammohan Mukherjee Lane</span> <br /> 
+                                            <span>Howrah, Kolkata 711102</span>
                                         </div>
                                     </div>
                                 </li>
@@ -73,8 +75,7 @@ const Contact = ({ toastId }) => {
                                         </div>
                                         <div className="short">
                                             <h3>Email</h3>
-                                            <span><a href="#"><span className="__cf_email__"
-                                                data-cfemail="2149444d4d4e6145485b4c440f424e4c">braktim99@gmail.com</span></a></span>
+                                            <span><a href="mailto:braktim99@gmail.com">braktim99@gmail.com</a></span>
                                         </div>
                                     </div>
                                 </li>
@@ -85,7 +86,7 @@ const Contact = ({ toastId }) => {
                                         </div>
                                         <div className="short">
                                             <h3>Phone</h3>
-                                            <span>+91-98367 39907</span>
+                                            <span><a href="tel:+919836739907">+91-98367 39907</a></span>
                                         </div>
                                     </div>
                                 </li>
