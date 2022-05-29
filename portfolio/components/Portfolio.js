@@ -33,8 +33,8 @@ const Portfolio = ({ portfolios: PORTFOLIOS }) => {
                     <div className="portfolio_list wow fadeInUp" data-wow-duration="1s">
                         <ul className="gallery_zoom grid">
                             {portfolios.map((item, index) => (
-                                <li className={`${item.category} grid-item`}>
-                                    <PortfolioItem key={index} {...item} />
+                                <li key={index} className={`${item.category} grid-item`}>
+                                    <PortfolioItem {...item} />
                                 </li>
                             ))}
                         </ul>

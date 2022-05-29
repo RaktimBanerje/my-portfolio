@@ -12,11 +12,11 @@ const BlogItem = ({ link, date, image, title, category_link, category }) => {
                     <h3>{new Date(date).getDate()}</h3>
                     <span>{new Date(date).toLocaleString('en-US', { month: 'short' })}</span>
                 </div>
-                <a target="_blank" className="dizme_tm_full_link" href={link}></a>
+                <a target="_blank" className="dizme_tm_full_link" href={link} rel="noreferrer"></a>
             </div>
             <div className="details">
-                <span className="category"><a target="_blank" href={category_link ? category_link : link }>{category}</a></span>
-                <h3 className="title"><a target="_blank" href={link}>{title}</a></h3>
+                <span className="category"><a target="_blank" href={category_link ? category_link : link } rel="noreferrer">{category}</a></span>
+                <h3 className="title"><a target="_blank" href={link} rel="noreferrer">{title}</a></h3>
             </div>
         </div>
     )

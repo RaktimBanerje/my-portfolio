@@ -94,7 +94,7 @@ const Contact = ({ toastId }) => {
                         </div>
                         <div className="right wow fadeInRight" data-wow-duration="1s">
                             <div className="fields">
-                                <form className="contact_form" id="contact_form" autocomplete="off" onSubmit={(event) => submitHandler(event)}>
+                                <form className="contact_form" id="contact_form" autoComplete="off" onSubmit={(event) => submitHandler(event)}>
                                     <div className="returnmessage"
                                         data-success="Your message has been received, We will contact you soon."></div>
                                     <div className="empty_notice"><span>Please Fill Required Fields</span></div>
@@ -121,7 +121,7 @@ const Contact = ({ toastId }) => {
                     <div className="dizme_tm_map wow fadeInUp" data-wow-duration="1s">
                         <div className="mapouter">
                             
-                            <div className="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.232999305685!2d88.31944551492494!3d22.570387285184022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0278299da89eed%3A0xce5993e7eef1af85!2s29e%2C%201%2C%20Rammohan%20Mukherjee%20Ln%2C%20Shibtala%2C%20Naora%2C%20Shibpur%2C%20Howrah%2C%20West%20Bengal%20711102!5e0!3m2!1sen!2sin!4v1651338953070!5m2!1sen!2sin" width="100%" height="375" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a
+                            <div className="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.232999305685!2d88.31944551492494!3d22.570387285184022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0278299da89eed%3A0xce5993e7eef1af85!2s29e%2C%201%2C%20Rammohan%20Mukherjee%20Ln%2C%20Shibtala%2C%20Naora%2C%20Shibpur%2C%20Howrah%2C%20West%20Bengal%20711102!5e0!3m2!1sen!2sin!4v1651338953070!5m2!1sen!2sin" width="100%" height="375" style={{border: 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a
                                     href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon"></a><br />
                             </div>
                         </div>

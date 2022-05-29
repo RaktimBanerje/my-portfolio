@@ -364,8 +364,8 @@ const Skill = ({ categories: myCategories, skills: mySkills }) => {
                                 const category = skill.categories.map(({value})=> value)
                                 
                                 return (
-                                    <li className={`${category.join(" ")} grid-item skill`}>
-                                        <SkillItem key={index} {...skill} />
+                                    <li key={index} className={`${category.join(" ")} grid-item skill`}>
+                                        <SkillItem {...skill} />
                                     </li>
                                 )
                             })}

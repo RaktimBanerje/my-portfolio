@@ -15,14 +15,14 @@ import Footer from '../components/Footer'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const index = ({ categories, skills, portfolios, articles }) => {
+const Index = ({ categories, skills, portfolios, articles }) => {
     
     const toastId = React.useRef(null)
     
     return (
         <React.Fragment>
             <Head>
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta charset="utf-8" />
                 <meta name="description" content="Name of your web site" />
                 <meta name="author" content="Marketify" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -40,8 +40,8 @@ const index = ({ categories, skills, portfolios, articles }) => {
             </Head>
 
             <Script src="/js/jquery.js" />
-            <Script src="/js/plugins.js" />
-            <Script strategy="afterInteractive" src="/js/init.js" />
+            <Script defer src="/js/plugins.js" />
+            <Script defer strategy="afterInteractive" src="/js/init.js" />
 
             {/* <PreLoader /> */}
                 
@@ -95,4 +95,4 @@ export async function getStaticProps() {
     }
 }
 
-export default index
+export default Index

@@ -4,7 +4,7 @@ const PortfolioItem = ({ title, description, image, category, link }) => {
   return (
     <div className="inner">
         <div className="entry dizme_tm_portfolio_animation_wrap" data-category={category}>
-          <a target="_blank" href={link}>
+          <a target="_blank" href={link} rel="noreferrer">
             <img src="/img/thumbs/42-56.jpg" alt="" />
             <div className="main" data-img-url={image}></div>
           </a>
