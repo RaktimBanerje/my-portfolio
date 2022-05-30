@@ -39,9 +39,9 @@ const Index = ({ categories, skills, portfolios, articles }) => {
                 <link rel="stylesheet" type="text/css" href="/css/style.css" />
             </Head>
 
-            <Script src="/js/jquery.js" />
-            <Script defer src="/js/plugins.js" />
-            <Script defer strategy="afterInteractive" src="/js/init.js" />
+            <Script src="/js/jquery.js" strategy="beforeInteractive" />
+            <Script src="/js/plugins.js" strategy="afterInteractive" />
+            <Script src="/js/init.js" strategy="afterInteractive" />
 
             {/* <PreLoader /> */}
                 
