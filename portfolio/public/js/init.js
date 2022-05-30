@@ -29,7 +29,7 @@ jQuery(document).ready(function () {
 
 function dizme_tm_modalbox() {
     "use strict";
-    jQuery('.dizme_tm_all_wrap').prepend('<div className="dizme_tm_modalbox"><div className="box_inner"><div className="close"><a href="#"><i className="icon-cancel"></i></a></div><div className="description_wrap"></div></div></div>');
+    jQuery('.dizme_tm_all_wrap').prepend('<div class="dizme_tm_modalbox"><div class="box_inner"><div class="close"><a href="#"><i class="icon-cancel"></i></a></div><div class="description_wrap"></div></div></div>');
 }
 
 function dizme_tm_nav_bg() {
@@ -84,9 +84,9 @@ function dizme_tm_service_popup() {
         var content = parent.find('.service_hidden_details').html();
         modalBox.addClass('opened');
         modalBox.find('.description_wrap').html(content);
-        modalBox.find('.service_popup_informations').prepend('<div className="image"><img src="img/thumbs/4-2.jpg" alt="" /><div className="main" data-img-url="' + elImage + '"></div></div>');
+        modalBox.find('.service_popup_informations').prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="' + elImage + '"></div></div>');
         dizme_tm_data_images();
-        modalBox.find('.service_popup_informations .image').after('<div className="main_title">' + title + '</div>');
+        modalBox.find('.service_popup_informations .image').after('<div class="main_title">' + title + '</div>');
         return false;
     });
     closePopup.on('click', function () {
@@ -110,8 +110,8 @@ function dizme_tm_modalbox_news() {
         var title = parent.find('.details .title a').text();
         modalBox.addClass('opened');
         modalBox.find('.description_wrap').html(content);
-        modalBox.find('.news_popup_informations').prepend('<div className="image"><img src="img/thumbs/4-2.jpg" alt="" /><div className="main" data-img-url="' + image + '"></div></div>');
-        modalBox.find('.news_popup_informations .image').after('<div className="details"><h3>' + title + '</h3><span>' + category + '</span><div>');
+        modalBox.find('.news_popup_informations').prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="' + image + '"></div></div>');
+        modalBox.find('.news_popup_informations .image').after('<div class="details"><h3>' + title + '</h3><span>' + category + '</span><div>');
         dizme_tm_data_images();
         return false;
     });
@@ -136,8 +136,8 @@ function dizme_tm_modalbox_portfolio() {
         var title = parent.find('.entry').data('title');
         modalBox.addClass('opened');
         modalBox.find('.description_wrap').html(content);
-        modalBox.find('.popup_details').prepend('<div className="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div className="main" data-img-url="' + image + '"></div></div>');
-        modalBox.find('.popup_details .top_image').after('<div className="portfolio_main_title"><h3>' + title + '</h3><span><a href="#">' + category + '</a></span><div>');
+        modalBox.find('.popup_details').prepend('<div class="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="' + image + '"></div></div>');
+        modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title"><h3>' + title + '</h3><span><a href="#">' + category + '</a></span><div>');
         dizme_tm_data_images();
         return false;
     });
@@ -178,7 +178,7 @@ function dizme_tm_projects() {
     jQuery('.dizme_tm_portfolio_animation_wrap').each(function () {
         jQuery(this).on('mouseenter', function () {
             if (jQuery(this).data('title')) {
-                jQuery('.dizme_tm_portfolio_titles').html(jQuery(this).data('title') + '<span className="work__cat">' + jQuery(this).data('category') + '</span>');
+                jQuery('.dizme_tm_portfolio_titles').html(jQuery(this).data('title') + '<span class="work__cat">' + jQuery(this).data('category') + '</span>');
                 jQuery('.dizme_tm_portfolio_titles').addClass('visible');
             }
             jQuery(document).on('mousemove', function (e) {
