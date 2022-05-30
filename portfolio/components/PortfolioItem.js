@@ -22,7 +22,7 @@ const PortfolioItem = ({ title, description, image, category, link, subTitle, im
                     link && (
                       <div className="button">
                         <div className="dizme_tm_button" style={{textAlign: "center"}}>
-                          <a className="anchor" target="_blank" href={link}><span>Live link</span></a>
+                          <a className="anchor" target="_blank" href={link} rel="noreferrer"><span>Live link</span></a>
                         </div>
                       </div>
                     )
