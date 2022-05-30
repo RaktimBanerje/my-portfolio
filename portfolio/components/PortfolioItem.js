@@ -1,20 +1,52 @@
 import React from 'react'
 
-const PortfolioItem = ({ title, description, image, category, link }) => {
+const PortfolioItem = ({ title, description, image, category, link, subTitle, images }) => {
+  
   return (
     <div className="inner">
-        <div className="entry dizme_tm_portfolio_animation_wrap" data-category={category}>
-          <a target="_blank" href={link} rel="noreferrer">
-            <img src="/img/thumbs/42-56.jpg" alt="" />
+    <div className="entry dizme_tm_portfolio_animation_wrap" data-title={title} data-category={subTitle} >
+        <a className="portfolio_popup" href={link}>
+            <img src="img/thumbs/42-34.jpg" alt="" />
             <div className="main" data-img-url={image}></div>
-          </a>
-        </div>
-        <div style={{marginTop: "10px"}}>
-            <h4 style={{textAlign: "center"}}>{title}</h4>
-            <p style={{textAlign: "center"}}>{description}</p>
-        </div>
-        <hr />
+        </a>
     </div>
+    <div className="mobile_title">
+        <h3>{title}</h3>
+        <span>{description}</span>
+    </div>
+    <div className="hidden_content">
+        <div className="popup_details">
+            <div className="main_details">
+                <div className="textbox" style={{width: "100%"}}>
+                  {
+                    link && (
+                      <div className="button">
+                        <div className="dizme_tm_button" style={{textAlign: "center"}}>
+                          <a className="anchor" target="_blank" href={link}><span>Live link</span></a>
+                        </div>
+                      </div>
+                    )
+                  }
+                </div>
+            </div>
+            <div className="additional_images">
+                <ul>
+                  {Array.isArray(images) && images.map((image, index) => (
+                      <li key={index}>
+                          <div className="list_inner">
+                              <div className="my_image">
+                                  <img src="img/thumbs/4-2.jpg" alt="" />
+                                  <div className="main" data-img-url={image}>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                  ))}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
   )
 }
 

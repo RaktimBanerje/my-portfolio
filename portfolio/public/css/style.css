@@ -1201,15 +1201,15 @@ h6 {
     transition: all .3s ease-in-out
 }
 
-.dizme_tm_portfolio .portfolio_list ul li .inner:hover .main {
-    /* transform: scale(1.1) translateZ(0) */
+/* .dizme_tm_portfolio .portfolio_list ul li .inner:hover .main {
+    transform: scale(1.1) translateZ(0);
     background-position: bottom;
     transition: ease-in-out 8s;
 }
 .dizme_tm_portfolio .portfolio_list ul li .inner .main {
     background-position: top;
     transition: ease-in-out 8s;
-}
+} */
 
 .dizme_tm_portfolio_titles {
     white-space: nowrap;
