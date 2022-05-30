@@ -40,7 +40,7 @@ const Index = ({ categories, skills, portfolios, articles }) => {
             </Head>
 
             <Script src="/js/jquery.js" strategy="beforeInteractive" />
-            <Script src="/js/plugins.js" strategy="afterInteractive" />
+            <Script src="/js/plugins.js" strategy="beforeInteractive" />
             <Script src="/js/init.js" strategy="afterInteractive" />
 
             {/* <PreLoader /> */}
