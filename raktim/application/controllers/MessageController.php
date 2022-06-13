@@ -2,15 +2,11 @@
     defined('BASEPATH') OR exit('No direct script access allowed');
 
     class MessageController extends CI_Controller {
-        public function __construct() {
-            
-            parent::__construct();
+        public function __construct($config = 'rest') {
 
-            Header('Access-Control-Allow-Origin: *'); //for allow any domain, insecure
-            Header('Access-Control-Allow-Headers: *'); //for allow any headers, insecure
-            Header('Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE'); //method allowed
+          	parent::__construct();
 
-            $this->load->model("Message");
+          	$this->load->model("Message");
         }
 
         public function index() {
@@ -27,7 +23,11 @@
         }
 
         public function store() {
-
+          
+            header('Access-Control-Allow-Origin: *');
+            header("Access-Control-Allow-Methods: GET, OPTIONS");
+            header('Content-Type: application/json; charset=utf-8');
+          
             date_default_timezone_set('Asia/Kolkata');
 
             $data = [

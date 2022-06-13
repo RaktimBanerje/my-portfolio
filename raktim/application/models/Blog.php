@@ -8,9 +8,8 @@
                 return $this->db->where("id", $id)->get("blog")->row();
             }
             else {
-                return $this->db->get("blog")->result();
-            }
-        
+                return $this->db->order_by("order")->get("blog")->result();
+            }       
         }
         
         public function add($data) {
@@ -19,6 +18,12 @@
 
         public function update($id, $data) {
             $this->db->where("id", $id)->update("blog", $data);
+        }
+
+        public function updateArticleOrder($orders) {
+            for ($index=0; $index < count($orders); $index++) { 
+                $this->db->where("id", $orders[$index])->update("blog", array("order" => $index + 1));
+            }
         }
 
         public function delete($id) {

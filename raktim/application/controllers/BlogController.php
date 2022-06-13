@@ -42,13 +42,13 @@
 
                 if($file['status']){
                     $data = [
-                        "image"         => base_url().'assets/blog/'.$file['upload_data']['file_name'],
+                        "image"         => $file['upload_data']['file_name'],
                         "title"         => $this->input->post("title"),
                         "description"   => $this->input->post("description"),
-                        "date"       => $this->input->post("date"),
+                        "date"       	=> $this->input->post("date"),
                         "link"          => $this->input->post("link"),
-                        "category"          => $this->input->post("category"),
-                        "category_link"          => $this->input->post("category_link")
+                        "category"      => $this->input->post("category"),
+                        "category_link" => $this->input->post("category_link"),
                     ];
 
                     $this->Blog->add($data);
@@ -74,10 +74,10 @@
             $data = [
                 "title"         => $this->input->post("title"),
                 "description"   => $this->input->post("description"),
-                "date"       => $this->input->post("date"),
-                "link"          => $this->input->post("link"),
-                "category"          => $this->input->post("category"),
-                "category_link"          => $this->input->post("category_link")
+                "date"       	=> $this->input->post("date"),
+                "link"       	=> $this->input->post("link"),
+                "category"      => $this->input->post("category"),
+                "category_link" => $this->input->post("category_link"),
             ];
             
             $file = $this->upload_file("image");
@@ -92,12 +92,26 @@
 
                 $this->delete_file($record->image);
 
-                $data["image"] = base_url().'assets/blog/'.$file['upload_data']['file_name'];
+                $data["image"] = $file['upload_data']['file_name'];
 
                 $this->Blog->update($id, $data);
 
                 redirect (base_url(). 'blog');
             }
+        }
+
+        public function updateArticleOrder() {
+            if($this->session->userdata("user") == NULL) {
+                redirect (base_url());
+            }
+            
+            $orders = $this->input->post("order");
+            $orders = explode(",", $orders);
+
+            $this->Blog->updateArticleOrder($orders);
+
+            header("Content-Type: application/json");
+            echo json_encode(array("updated" => 1));
         }
 
         public function delete($id) {

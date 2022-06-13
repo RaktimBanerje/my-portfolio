@@ -15,7 +15,7 @@ import Footer from '../components/Footer'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Index = ({ categories, skills, portfolios, articles }) => {
+const Index = ({ categories, skills, portfolios, articles, baseUrl }) => {
     
     const toastId = React.useRef(null)
     
@@ -50,10 +50,10 @@ const Index = ({ categories, skills, portfolios, articles }) => {
                 <Banner />
                 <Process />
                 <About />
-                <Portfolio portfolios={portfolios} />
-                <Skill categories={categories} skills={skills} />
+                <Portfolio portfolios={portfolios} baseUrl={baseUrl} />
+                <Skill categories={categories} skills={skills} baseUrl={baseUrl} />
                 <Service />
-                <Blog articles={articles} />
+                <Blog articles={articles} baseUrl={baseUrl} />
                 <Contact toastId={toastId} />
                 <Footer />
 
@@ -72,17 +72,19 @@ const Index = ({ categories, skills, portfolios, articles }) => {
 }
 
 export async function getStaticProps() {
+
+    const baseUrl = "https://bluekeyboardsoftware.com/raktim/"
     
-    const categoryResponse = await fetch("https://bluekeyboardsoftware.com/raktim/api/category")
+    const categoryResponse = await fetch(`${baseUrl}api/category`)
     const categories = await categoryResponse.json()    
     
-    const skillResponse = await fetch("https://bluekeyboardsoftware.com/raktim/api/skill")
+    const skillResponse = await fetch(`${baseUrl}api/skill`)
     const skills = await skillResponse.json()
 
-    const portfolioResponse = await fetch("https://bluekeyboardsoftware.com/raktim/api/portfolio")
+    const portfolioResponse = await fetch(`${baseUrl}api/portfolio`)
     const portfolios = await portfolioResponse.json()
 
-    const articleResponse = await fetch("https://bluekeyboardsoftware.com/raktim/api/blog")
+    const articleResponse = await fetch(`${baseUrl}api/blog`)
     const articles = await articleResponse.json()
 
     return {
@@ -90,8 +92,10 @@ export async function getStaticProps() {
             categories,
             skills,
             portfolios,
-            articles
-        }
+            articles,
+            baseUrl
+        },
+        revalidate: 10
     }
 }
 

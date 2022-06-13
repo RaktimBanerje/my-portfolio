@@ -1,0 +1,1 @@
+<pre><?php echo print_r($inputs, true) ?></pre>

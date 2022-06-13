@@ -1,15 +1,15 @@
 import React from 'react'
 
-const PortfolioItem = ({ title, description, image, category, link, subTitle, images }) => {
+const PortfolioItem = ({ title, description, image, category, link, subTitle, images, baseUrl }) => {
   
   return (
     <div className="inner">
-    <div className="entry dizme_tm_portfolio_animation_wrap" data-title={title} data-category={subTitle} >
-        <a className="portfolio_popup" href={link}>
-            <img src="img/thumbs/42-34.jpg" alt="" />
-            <div className="main" data-img-url={image}></div>
-        </a>
-    </div>
+      <div className="entry dizme_tm_portfolio_animation_wrap" data-title={title} data-category={subTitle} >
+          <a className="portfolio_popup" href={link}>
+              <img src="img/thumbs/42-34.jpg" alt="" />
+              <div className="main" data-img-url={`${baseUrl}assets/portfolio/${image}`}></div>
+          </a>
+      </div>
     <div className="mobile_title">
         <h3>{title}</h3>
         <span>{description}</span>
@@ -31,12 +31,12 @@ const PortfolioItem = ({ title, description, image, category, link, subTitle, im
             </div>
             <div className="additional_images">
                 <ul>
-                  {Array.isArray(images) && images.map((image, index) => (
+                  {Array.isArray(images) && images.map((imageData, index) => (
                       <li key={index}>
                           <div className="list_inner">
                               <div className="my_image">
                                   <img src="img/thumbs/4-2.jpg" alt="" />
-                                  <div className="main" data-img-url={image}>
+                                  <div className="main" data-img-url={`${baseUrl}assets/portfolio/${imageData.image}`}>
                                   </div>
                               </div>
                           </div>

@@ -2,12 +2,12 @@ import React from 'react'
 
 
 
-const BlogItem = ({ link, date, image, title, category_link, category }) => {
+const BlogItem = ({ link, date, image, title, category_link, category, baseUrl }) => {
     return (
         <div className="list_inner">
             <div className="image">
                 <img  src="/img/thumbs/42-29.jpg" alt="" />
-                <div className="main" data-img-url={image}></div>
+                <div className="main" data-img-url={`${baseUrl}assets/blog/${image}`}></div>
                 <div className="date">
                     <h3>{new Date(date).getDate()}</h3>
                     <span>{new Date(date).toLocaleString('en-US', { month: 'short' })}</span>

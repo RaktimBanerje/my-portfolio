@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 const Process = () => {
     return (
         <div className="dizme_tm_section" id="process">

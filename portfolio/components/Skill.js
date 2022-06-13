@@ -94,7 +94,7 @@ const Skill = ({ categories: myCategories, skills: mySkills }) => {
             },
             {
                 "id": "11",
-                "name": "WordPress (Theme Development)",
+                "name": "WordPress",
                 "category": "7",
                 "number": "80",
                 "categories": [

@@ -59,11 +59,16 @@ $route["login"]["POST"] = "UserController/login";
 $route["logout"]["GET"] = "UserController/logout";
 
 $route["portfolio"]["GET"] = "PortfolioController";
+$route["portfolio/create"]["GET"] = "PortfolioController/create";
 $route["portfolio"]["POST"] = "PortfolioController/store";
 $route["portfolio/delete/(:any)"]["GET"] = "PortfolioController/delete/$1";
+$route["portfolio/delete-image/(:any)"]["GET"] = "PortfolioController/deleteOtherImage/$1";
+$route["portfolio/portfolio-arrange"]["POST"] = "PortfolioController/updatePortfolioOrder";
+$route["portfolio/images-arrange"]["POST"] = "PortfolioController/updateOtherImageOrder";
 $route["api/portfolio"]["GET"] = "PortfolioController/get_all";
 
 $route["blog"]["GET"] = "BlogController";
+$route["blog/article-arrange"]["POST"] = "BlogController/updateArticleOrder";
 $route["blog"]["POST"] = "BlogController/store";
 $route["blog/delete/(:any)"]["GET"] = "BlogController/delete/$1";
 $route["api/blog"]["GET"] = "BlogController/get_all";

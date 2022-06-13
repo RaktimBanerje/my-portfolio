@@ -1,7 +1,5 @@
 import React from 'react'
-
 import Image from "next/image"
-
 import avatar from "../public/img/slider/avatar.webp"
 
 const Banner = () => {

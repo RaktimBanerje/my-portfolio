@@ -1,10 +1,7 @@
 import React from 'react'
 import BlogItem from './BlogItem'
 
-const Blog = ({ articles }) => {
-
-    articles.sort((a, b) => (Number(a.priority) > Number(b.priority)) ? 1 : -1)
-
+const Blog = ({ articles, baseUrl }) => {
     return (
         <div className="dizme_tm_section" id="blog" style={{paddingTop: 0}}>
             <div className="dizme_tm_news" style={{paddingTop: 0}}>
@@ -17,7 +14,7 @@ const Blog = ({ articles }) => {
                         <ul>
                             {articles.map((article, index) => (
                                 <li key={index} className="wow fadeInUp" data-wow-duration="1s" data-wow-delay={`0.${index * 2}s`}>
-                                    <BlogItem {...article} />
+                                    <BlogItem {...article} baseUrl={baseUrl} />
                                 </li>
                             ))}
                         </ul>

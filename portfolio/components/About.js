@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+import image1 from "../public/img/about/1.jpg"
 
 const About = () => {
     return (
@@ -8,7 +10,7 @@ const About = () => {
                     <div className="wrapper">
                         <div className="left">
                             <div className="image">
-                                <img placeholder="blur" src="/img/about/1.jpg" alt="" />
+                                <Image placeholder="blur" src={image1} alt="" />
                                 {/* <div className="numbers year">
                                     <div className="wrapper">
                                         <h3><span className="dizme_tm_counter" data-from="0" data-to="18"

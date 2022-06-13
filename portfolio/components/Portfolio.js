@@ -1,14 +1,11 @@
 import React from 'react'
 import PortfolioItem from './PortfolioItem'
 
-const Portfolio = ({ portfolios: PORTFOLIOS }) => {
+const Portfolio = ({ portfolios: PORTFOLIOS, baseUrl }) => {
 
     const [portfolios, setPortfolios] = React.useState([])
 
     React.useEffect(() => {
-        
-        portfolios.sort((a, b) => (Number(a.priority) > Number(b.priority)) ? 1 : -1)
-
         Array.isArray(PORTFOLIOS) && PORTFOLIOS.length > 0 && setPortfolios(PORTFOLIOS)
     }, [portfolios])
 
@@ -34,7 +31,7 @@ const Portfolio = ({ portfolios: PORTFOLIOS }) => {
                         <ul className="gallery_zoom grid">
                             {portfolios.map((item, index) => (
                                 <li key={index} className={`${item.category} grid-item`}>
-                                    <PortfolioItem {...item} />
+                                    <PortfolioItem {...item} baseUrl={baseUrl} />
                                 </li>
                             ))}
                         </ul>
@@ -48,7 +45,5 @@ const Portfolio = ({ portfolios: PORTFOLIOS }) => {
         </div>
     )
 }
-
-
 
 export default Portfolio
