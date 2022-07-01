@@ -12,7 +12,7 @@ const Portfolio = ({ portfolios: PORTFOLIOS, baseUrl }) => {
     return (
         <div className="dizme_tm_section" id="portfolio">
             <div className="dizme_tm_portfolio">
-                <div className="container">
+                <div className="container portfolio-container">
                     <div className="dizme_tm_main_title" data-align="center">
                         <span>Portfolio</span>
                         <h3>My Amazing Works</h3>
