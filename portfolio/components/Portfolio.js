@@ -1,11 +1,7 @@
 import React from 'react'
 import PortfolioItem from './PortfolioItem'
 
-<<<<<<< HEAD
 const Portfolio = ({ portfolios: PORTFOLIOS }) => {
-=======
-const Portfolio = ({ portfolios: PORTFOLIOS, baseUrl }) => {
->>>>>>> 730e11681474db7f672081965333ef2dabe5baf4
 
     const [portfolios, setPortfolios] = React.useState([])
 
@@ -35,11 +31,7 @@ const Portfolio = ({ portfolios: PORTFOLIOS, baseUrl }) => {
                         <ul className="gallery_zoom grid">
                             {portfolios.map((item, index) => (
                                 <li key={index} className={`${item.category} grid-item`}>
-<<<<<<< HEAD
                                     <PortfolioItem {...item} />
-=======
-                                    <PortfolioItem {...item} baseUrl={baseUrl} />
->>>>>>> 730e11681474db7f672081965333ef2dabe5baf4
                                 </li>
                             ))}
                         </ul>

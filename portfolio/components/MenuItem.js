@@ -8,11 +8,7 @@ const MenuItem = () => {
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#skill">Skill</a></li>
             <li><a href="#service">Service</a></li>
-<<<<<<< HEAD
             {/* <li><a href="#blog">Blog</a></li> */}
-=======
-            <li><a href="#blog">Blog</a></li>
->>>>>>> 730e11681474db7f672081965333ef2dabe5baf4
             <li><a href="#contact">Contact</a></li>
             <li className="download_cv"><a href="CV.pdf" target="_blank" download="Raktim_CV.pdf" rel="noreferrer"><span>Download CV</span></a></li>
         </ul>
