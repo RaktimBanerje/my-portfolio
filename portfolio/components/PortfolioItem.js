@@ -3,7 +3,7 @@ import React from 'react'
 const PortfolioItem = ({ title, description, image, category, link, subTitle, images }) => {
   
   return (
-    <div className="inner">
+    <div className="inner" style={{marginBottom: 20, boxShadow: "2px -2px 15px 0px"}}>
       <div className="entry dizme_tm_portfolio_animation_wrap" data-title={title} data-category={subTitle} >
           <a className="portfolio_popup" href={link}>
               <img src="img/thumbs/42-34.jpg" alt="" />
@@ -32,7 +32,7 @@ const PortfolioItem = ({ title, description, image, category, link, subTitle, im
             <div className="additional_images">
                 <ul>
                   {Array.isArray(images) && images.map((image, index) => (
-                      <li key={index}>
+                      <li key={index} style={{marginBottom: 10}}>
                           <div className="list_inner">
                               <div className="my_image">
                                   <img src="img/thumbs/4-2.jpg" alt="" />

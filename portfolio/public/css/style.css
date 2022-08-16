@@ -1256,7 +1256,9 @@ h6 {
     clear: both;
     float: left;
     padding-top: 20px;
-    display: none
+    display: none;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .dizme_tm_portfolio .mobile_title h3 {
@@ -3188,7 +3190,7 @@ input[type=number] {
     }
 
     .container {
-        max-width: 1170px
+        /* max-width: 1170px */
     }
 
     .dizme_tm_header {
