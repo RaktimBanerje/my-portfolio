@@ -16,7 +16,7 @@ export default [
         description: "", 
         image: "greenforest_cover.png", 
         category: "client", 
-        link: "https://bluekeyboardsoftware.com", 
+        link: "https://coderpartha.com", 
         images: [
             "greenforest0.png",
             "greenforest1.png",
@@ -27,12 +27,22 @@ export default [
         ], 
     },
     {
+        title: "Non Profit Organization", 
+        subTitle: "", 
+        description: "", 
+        image: "ihn_home.png", 
+        category: "client", 
+        link: null, 
+        images: [  
+        ], 
+    },
+    {
         title: "Uber Clone", 
         subTitle: "", 
         description: "", 
         image: "16566985811.png", 
         category: "personal", 
-        link: "https://bluekeyboardsoftware.com", 
+        link: "", 
         images: [
             "16566995131.png",
             "16566995132.png"
