@@ -4022,3 +4022,27 @@ input[type=number] {
     width: 100%;
 }
 
+.portfolio-item-container {
+    width: 100%;
+    transform: scale(1);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.portfolio-item-container:hover {
+    width: 100%;
+    transform: scale(1.1);
+    transition: 0.4s;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.portfolio-item {
+    transition: ease-in-out 7s;
+    background-position: top !important;
+}
+
+.portfolio-item:hover {
+    transition: ease-in-out 7s;
+    background-position: bottom !important;
+}
