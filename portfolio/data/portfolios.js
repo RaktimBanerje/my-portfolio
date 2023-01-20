@@ -63,6 +63,17 @@ export default [
         ], 
     },
     {
+        title: "Samsung Experience Store", 
+        subTitle: "", 
+        description: "", 
+        image: "ses.png", 
+        category: "client",
+        link: "https://ses.hu/", 
+        images: [ 
+            "ses_cover.png"
+        ], 
+    },
+    {
         title: "Account Management System", 
         subTitle: "", 
         description: "", 
@@ -90,6 +101,17 @@ export default [
         ], 
     },
     {
+        title: "Wholesale Ecommerce Store", 
+        subTitle: "", 
+        description: "", 
+        image: "fulcare.png", 
+        category: "client",
+        link: "https://www.fulcare.co.uk/", 
+        images: [ 
+            "fulcare_cover.png"
+        ], 
+    },
+    {
         title: "Covid-19 Tracker", 
         subTitle: "", 
         description: "", 
@@ -101,15 +123,16 @@ export default [
             "16552018081.png",
             "16552018291.png"
         ], 
-    },    {
-        title: "Landing Page", 
+    },
+    {
+        title: "Wordpress WooCommerce", 
         subTitle: "", 
         description: "", 
-        image: "1656135801.png", 
+        image: "parwel.png", 
         category: "client", 
-        link: "https://apsmanagement.in", 
+        link: "https://www.parweld.com/", 
         images: [
-            "1656135801.png"
+            "parwel_cover.png"
         ], 
     }
 ]
