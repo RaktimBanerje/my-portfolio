@@ -150,6 +150,31 @@ export default [
         ], 
     },
     {
+        title: "Trimme App", 
+        subTitle: "", 
+        description: "", 
+        image: "drapper_img_1.png", 
+        category: "personal", 
+        link: "", 
+        images: [
+            "drapper_img_1.png",
+            "drapper_img_2.png",
+            "drapper_img_3.png",
+        ], 
+    },
+    {
+        title: "Quiz App", 
+        subTitle: "", 
+        description: "", 
+        image: "quiz.png", 
+        category: "personal", 
+        link: "", 
+        images: [
+            "quiz.png",
+            "quiz_1.png",
+        ], 
+    },
+    {
         title: "Uber Clone", 
         subTitle: "", 
         description: "", 
