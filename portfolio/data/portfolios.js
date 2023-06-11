@@ -7,7 +7,7 @@ export default [
         category: "client", 
         link: "https://mrgroupofcolleges.com/", 
         images: [
-            "mr_group_home.jpg"
+            "mrgroup_home.jpg"
         ], 
     },
     {
@@ -111,9 +111,9 @@ export default [
         description: "", 
         image: "ecommerce.jpg",  
         category: "client",
-        link: "https://ses.hu/", 
+        link: "https://www.godavarivantillu.com/", 
         images: [ 
-            "ecommerce_cover.jpg"
+            "ecommerce_home.jpg"
         ], 
     },
     {
@@ -135,7 +135,7 @@ export default [
         category: "client",
         link: "https://www.fulcare.co.uk/", 
         images: [ 
-            "fulcare_cover.jpg"
+            "fulcare_cover.png"
         ], 
     },
     {
