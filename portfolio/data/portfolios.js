@@ -1,52 +1,71 @@
 export default [
     {
-        title: "Digital Agency", 
+        title: "MR Group of Colleges", 
         subTitle: "", 
         description: "", 
-        image: "1655202413.png", 
+        image: "mr_group.jpg", 
         category: "client", 
-        link: "https://bluekeyboardsoftware.com", 
+        link: "https://mrgroupofcolleges.com/", 
         images: [
-            "1655202413.png"
+            "mr_group_home.jpg"
         ], 
     },
     {
-        title: "Green Forest", 
+        title: "MR Group of Colleges Campaign", 
         subTitle: "", 
         description: "", 
-        image: "greenforest_cover.png", 
+        image: "web6.jpg", 
         category: "client", 
-        link: "https://coderpartha.com", 
+        link: "https://mrgroupofcolleges.com/landing-page/admission/", 
         images: [
-            "greenforest_front.png",
-            "greenforest0.png",
-            "greenforest1.png",
-            "greenforest2.png",
-            "greenforest3.png",
-            "greenforest4.png",
-            "greenforest5.png"
+            "web6_home.jpg"
         ], 
     },
     {
-        title: "Non Profit Organization", 
+        title: "Elegant Interior", 
         subTitle: "", 
         description: "", 
-        image: "ihn_home.png", 
+        image: "elegant_home_full.jpg", 
         category: "client", 
-        link: "https://digitalplutform.com", 
-        images: [ 
-            "ihn_front.png" 
+        link: "https://www.elegantinterior.info/landing-page/home-interiors/", 
+        images: [
+            "elegant_home.jpg"
         ], 
     },
     {
-        title: "College CSR Project's Landing Page", 
+        title: "Convicity", 
         subTitle: "", 
         description: "", 
-        image: "mfd_cover.png", 
+        image: "convicity.jpg", 
         category: "client", 
-        link: "https://mfd.pitmkol.org", 
+        link: "https://convicity.in/", 
+        images: [
+            "convicity_home.jpg"
+        ], 
+    },
+    {
+        title: "Home Interior", 
+        subTitle: "", 
+        description: "", 
+        image: "elegant_home_1_full.jpg", 
+        category: "client", 
+        link: "https://www.elegantinterior.info/home-interior-design/", 
+        images: [
+            "elegant_home_1.jpg"
+        ], 
+    },
+    {
+        title: "Finance Management System", 
+        subTitle: "", 
+        description: "", 
+        image: "finance_home.png", 
+        category: "client", 
         images: [ 
-            "mfd_front.png" 
+            "finance_1.png",
+            "finance_2.png",
+            "finance_3.png",
+            "finance_4.png",
+            "finance_5.png",
         ], 
     },
     {
@@ -55,22 +74,10 @@ export default [
         description: "", 
         image: "ems_cover.png", 
         category: "client", 
-        link: "https://lms.pitmkol.org", 
         images: [ 
             "ems_home.png",
             "ems0.png", 
             "ems1.png",  
-        ], 
-    },
-    {
-        title: "Samsung Experience Store", 
-        subTitle: "", 
-        description: "", 
-        image: "ses.png", 
-        category: "client",
-        link: "https://ses.hu/", 
-        images: [ 
-            "ses_cover.png"
         ], 
     },
     {
@@ -88,6 +95,61 @@ export default [
         ], 
     },
     {
+        title: "Pool Car Management System", 
+        subTitle: "", 
+        description: "", 
+        image: "school_home.png", 
+        category: "client", 
+        images: [ 
+            "school_home.png",
+            "school_1.png", 
+        ], 
+    },
+    {
+        title: "Ecommerce", 
+        subTitle: "", 
+        description: "", 
+        image: "ecommerce.jpg",  
+        category: "client",
+        link: "https://ses.hu/", 
+        images: [ 
+            "ecommerce_cover.jpg"
+        ], 
+    },
+    {
+        title: "Samsung Experience Store", 
+        subTitle: "", 
+        description: "", 
+        image: "ses.jpg", 
+        category: "client",
+        link: "https://ses.hu/", 
+        images: [ 
+            "ses_cover.png"
+        ], 
+    },
+    {
+        title: "Wholesale Ecommerce Store", 
+        subTitle: "", 
+        description: "", 
+        image: "fulcare.jpg", 
+        category: "client",
+        link: "https://www.fulcare.co.uk/", 
+        images: [ 
+            "fulcare_cover.jpg"
+        ], 
+    },
+    {
+        title: "Wordpress WooCommerce", 
+        subTitle: "", 
+        description: "", 
+        image: "parwel.jpg", 
+        category: "client", 
+        link: "https://www.parweld.com/", 
+        images: [
+            "parwel_cover.jpg"
+        ], 
+    },
+    {
         title: "Uber Clone", 
         subTitle: "", 
         description: "", 
@@ -98,17 +160,6 @@ export default [
             "16566985811.png",
             "16566995131.png",
             "16566995132.png"
-        ], 
-    },
-    {
-        title: "Wholesale Ecommerce Store", 
-        subTitle: "", 
-        description: "", 
-        image: "fulcare.png", 
-        category: "client",
-        link: "https://www.fulcare.co.uk/", 
-        images: [ 
-            "fulcare_cover.png"
         ], 
     },
     {
@@ -124,15 +175,4 @@ export default [
             "16552018291.png"
         ], 
     },
-    {
-        title: "Wordpress WooCommerce", 
-        subTitle: "", 
-        description: "", 
-        image: "parwel.png", 
-        category: "client", 
-        link: "https://www.parweld.com/", 
-        images: [
-            "parwel_cover.png"
-        ], 
-    }
 ]
